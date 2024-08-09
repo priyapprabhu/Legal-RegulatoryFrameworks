@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal and Regulatory Frameworks</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li onclick="showFramework('framework1')">
+                    <i class="fas fa-shield-alt"></i> General Data Protection Regulation
+                </li>
+                <li onclick="showFramework('framework2')">
+                    <i class="fa-solid fa-stethoscope"></i> Health Insurance Portability and Accountability Act
+                </li>
+                <li onclick="showFramework('framework3')">
+                    <i class="fa-solid fa-lock"></i> California Consumer Privacy Act
+                </li>
+                <li onclick="showFramework('framework4')">
+                    <i class="fas fa-credit-card"></i> Payment Card Industry Data Security Standard
+                </li>
+                <li onclick="showFramework('framework5')">
+                    <i class="fa-solid fa-building-lock"></i> Federal Information Security Management Act
+                </li>
+                <li onclick="showFramework('framework6')">
+                    <i class="fas fa-cogs"></i> Personal Data Protection Act
+                </li>
+                <li onclick="showFramework('framework7')">
+                    <i class="fas fa-gavel"></i> Brazilian General Data Protection Law
+                </li>
+                <li onclick="showFramework('framework8')">
+                    <i class="fas fa-globe"></i> NIST Cybersecuriy Framework
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <!-- Framework 1: GDPR -->
+            <div id="framework1" class="framework">
+                <h2>General Data Protection Regulation</h2>
+                <ul>
+                    <li onclick="showDetails('framework1-scope')">Scope</li>
+                    <li onclick="showDetails('framework1-objective')">Objective</li>
+                    <li onclick="toggleRights('framework1-rights')">Rights for Individuals and Organizations</li>
+                    <ul id="framework1-rights" class="rights-submenu">
+                        <li onclick="showDetails('framework1-rights-individuals')">Individuals</li>
+                        <li onclick="showDetails('framework1-rights-organizations')">Organizations</li>
+                    </ul>
+                    <li onclick="showDetails('framework1-consequences')">Consequences</li>
+                </ul>
+                <div id="framework1-scope" class="details">
+                    <h4>Details about Scope of GDPR:</h4>
+                    <p>GDPR applies to organizations within the EU and those outside the EU offering goods or services
+                        to or monitoring the behavior of EU residents. It covers processing of personal data by
+                        automated means and manual processing if part of a filing system.</p>
+                </div>
+                <div id="framework1-objective" class="details">
+                    <h4>Details about Objective of GDPR:</h4>
+                    <ul>
+                        <li>To protect the personal data and privacy of EU residents.</li>
+                        <li>To harmonize data privacy laws across Europe, ensuring consistent protection for all
+                            individuals within the EU.</li>
+                    </ul>
+                </div>
+                <div id="framework1-rights-individuals" class="details">
+                    <h4>Details about Rights for Individuals in GDPR:</h4>
+                    <ul>
+                        <li><b>Right to Access:</b> Obtain access to personal data and information about its processing.
+                        </li>
+                        <li><b>Right to Rectification:</b> Correct inaccurate or incomplete personal data.</li>
+                        <li><b>Right to Erasure:</b> Request deletion of personal data under certain conditions.</li>
+                        <li><b>Right to Restrict Processing:</b> Limit processing of personal data in specific
+                            situations.</li>
+                        <li><b>Right to Data Portability:</b> Receive personal data in a portable format and transfer it
+                            to another controller.</li>
+                        <li><b>Right to Object:</b> Object to processing of personal data, including for direct
+                            marketing.</li>
+                    </ul>
+                </div>
+                <div id="framework1-rights-organizations" class="details">
+                    <h4>Details about Rights for Organizations in GDPR:</h4>
+                    <ul>
+                        <li><b>Lawful Processing:</b> Ensure all data processing activities are based on lawful grounds.
+                        </li>
+                        <li><b>Data Protection by Design and Default:</b> Implement appropriate technical and
+                            organizational measures to ensure data protection principles are met.</li>
+                        <li><b>Data Breach Notifications:</b> Notify supervisory authorities and affected individuals of
+                            data breaches within specified timeframes.</li>
+                        <li><b>Appointing Data Protection Officers (DPOs):</b> Designate a DPO for organizations
+                            involved in large-scale data processing.</li>
+                    </ul>
+                </div>
+                <div id="framework1-consequences" class="details">
+                    <h4>Details about Consequences of GDPR:</h4>
+                    <ul>
+                        <li><b>Fines and Penalties:</b> Non-compliance can result in fines up to 20 million euros or 4%
+                            of the annual global turnover.</li>
+                        <li><b>Reputation Damage:</b> Breaches and non-compliance can lead to significant reputational
+                            harm.</li>
+                        <li><b>Legal Action:</b> Data subjects can seek compensation for damages resulting from GDPR
+                            violations.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Framework 2: HIPAA -->
+            <div id="framework2" class="framework">
+                <h2>Health Insurance Portability and Accountability Act</h2>
+                <ul>
+                    <li onclick="showDetails('framework2-scope')">Scope</li>
+                    <li onclick="showDetails('framework2-objective')">Objective</li>
+                    <li onclick="toggleRights('framework2-rights')">Rights for Individuals and Organizations</li>
+                    <ul id="framework2-rights" class="rights-submenu">
+                        <li onclick="showDetails('framework2-rights-individuals')">Individuals</li>
+                        <li onclick="showDetails('framework2-rights-organizations')">Organizations</li>
+                    </ul>
+                    <li onclick="showDetails('framework2-consequences')">Consequences</li>
+                </ul>
+                <div id="framework2-scope" class="details">
+                    <h4>Details about Scope of HIPAA:</h4>
+                    <p>HIPAA applies to organizations within the US. It covers electronic protected health information
+                        (ePHI) and includes healthcare providers, health plans, and healthcare clearinghouses.</p>
+                </div>
+                <div id="framework2-objective" class="details">
+                    <h4>Details about Objective of HIPAA:</h4>
+                    <ul>
+                        <li>To safeguard the privacy and security of individuals' health information.</li>
+                        <li>To provide individuals with rights regarding their health information while ensuring that
+                            healthcare organizations maintain high standards of data security and confidentiality.</li>
+                    </ul>
+                </div>
+                <div id="framework2-rights-individuals" class="details">
+                    <h4>Details about Rights for Individuals in HIPAA:</h4>
+                    <ul>
+                        <li><b>Right to Access:</b> Obtain copies of their health records and request amendments.</li>
+                        <li><b>Right to Privacy:</b> Control over the use and disclosure of their health information.
+                        </li>
+                        <li><b>Right to Notification:</b> Receive notifications about privacy practices and any breaches
+                            of their health information.</li>
+                        <li><b>Right to Request Restrictions:</b> Request limitations on the use and disclosure of their
+                            PHI.</li>
+                    </ul>
+                </div>
+                <div id="framework2-rights-organizations" class="details">
+                    <h4>Details about Rights for Organizations in HIPAA:</h4>
+                    <ul>
+                        <li><b>Privacy Rule Compliance:</b> Implement safeguards to protect the PHI and ensure that only
+                            authorized individuals can access it.</li>
+                        <li><b>Security Rule Compliance:</b> Establish security measures to protect ePHI, including
+                            administrative, physical, and technical safeguards.</li>
+                        <li><b>Breach Notifications:</b> Notify affected individuals and the Department of Health and
+                            Human Services of any breaches of unsecured PHI.</li>
+                        <li><b>Training and Policies:</b> Develop and enforce policies and procedures to ensure
+                            compliance with HIPAA regulations and train staff accordingly.</li>
+                    </ul>
+                </div>
+                <div id="framework2-consequences" class="details">
+                    <h4>Details about Consequences of HIPAA:</h4>
+                    <ul>
+                        <li><b>Fines and Penalties:</b> Non-compliance can result in fines ranging from $100 to $50,000
+                            per violation, with a maximum annual penalty of $1.5 million.</li>
+                        <li><b>Criminal Penalties:</b> Severe violations can lead to criminal charges with penalties
+                            including imprisonment.</li>
+                        <li><b>Reputation Damage:</b> Breaches and non-compliance can damage the organization's
+                            reputation and trustworthiness.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Framework 3: CCPA -->
+            <div id="framework3" class="framework">
+                <h2>California Consumer Privacy Act</h2>
+                <ul>
+                    <li onclick="showDetails('framework3-scope')">Scope</li>
+                    <li onclick="showDetails('framework3-objective')">Objective</li>
+                    <li onclick="toggleRights('framework3-rights')">Rights for Individuals and Organizations</li>
+                    <ul id="framework3-rights" class="rights-submenu">
+                        <li onclick="showDetails('framework3-rights-individuals')">Individuals</li>
+                        <li onclick="showDetails('framework3-rights-organizations')">Organizations</li>
+                    </ul>
+                    <li onclick="showDetails('framework3-consequences')">Consequences</li>
+                </ul>
+                <div id="framework3-scope" class="details">
+                    <h4>Details about Scope of CCPA:</h4>
+                    <p>The CCPA applies to for-profit businesses that collect personal data from California residents,
+                        do business in California, and meet certain thresholds (e.g., revenue or data volume).</p>
+                </div>
+                <div id="framework3-objective" class="details">
+                    <h4>Details about Objective of CCPA:</h4>
+                    <ul>
+                        <li>To enhance privacy rights and consumer protection for residents of California.</li>
+                        <li>To provide consumers with more control over their personal data and how it is collected and
+                            used by businesses.</li>
+                    </ul>
+                </div>
+                <div id="framework3-rights-individuals" class="details">
+                    <h4>Details about Rights for Individuals in CCPA:</h4>
+                    <ul>
+                        <li><b>Right to Know:</b> Access the personal data a business collects about them.</li>
+                        <li><b>Right to Delete:</b> Request deletion of their personal data collected by businesses.
+                        </li>
+                        <li><b>Right to Opt-Out:</b> Opt-out of the sale of their personal data to third parties.</li>
+                        <li><b>Right to Non-Discrimination:</b> Not be discriminated against for exercising their
+                            privacy
+                            rights under CCPA.</li>
+                    </ul>
+                </div>
+                <div id="framework3-rights-organizations" class="details">
+                    <h4>Details about Rights for Organizations in CCPA:</h4>
+                    <ul>
+                        <li><b>Data Collection and Disclosure:</b> Inform consumers about the categories of personal
+                            data
+                            collected and the purposes for which it is used.</li>
+                        <li><b>Consumer Requests:</b> Implement processes to handle consumer requests related to data
+                            access, deletion, and opt-out.</li>
+                        <li><b>Privacy Notices:</b> Update privacy policies and notices to comply with CCPA
+                            requirements.
+                        </li>
+                        <li><b>Data Security:</b> Ensure adequate security measures to protect personal data.</li>
+                    </ul>
+                </div>
+                <div id="framework3-consequences" class="details">
+                    <h4>Details about Consequences of CCPA:</h4>
+                    <ul>
+                        <li><b>Fines and Penalties:</b> Violations can result in fines of up to $2,500 per violation and
+                            $7,500 for intentional violations.</li>
+                        <li><b>Private Lawsuits:</b> Consumers can seek damages for certain violations, including
+                            unauthorized access or disclosure of personal data.</li>
+                        <li><b>Reputation Damage:</b> Non-compliance can harm an organization's reputation and customer
+                            trust.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Framework 4: PCI-DSS -->
+            <div id="framework4" class="framework">
+                <h2>Payment Card Industry Data Security Standard</h2>
+                <ul>
+                    <li onclick="showDetails('framework4-scope')">Scope</li>
+                    <li onclick="showDetails('framework4-objective')">Objective</li>
+                    <li onclick="toggleRights('framework4-rights')">Rights for Individuals and Organizations</li>
+                    <ul id="framework4-rights" class="rights-submenu">
+                        <li onclick="showDetails('framework4-rights-individuals')">Individuals</li>
+                        <li onclick="showDetails('framework4-rights-organizations')">Organizations</li>
+                    </ul>
+                    <li onclick="showDetails('framework4-consequences')">Consequences</li>
+                </ul>
+                <div id="framework4-scope" class="details">
+                    <h4>Details about Scope of PCI-DSS:</h4>
+                    <p>PCI-DSS applies to any organization that processes, stores, or transmits credit card information,
+                        regardless of size or transaction volume.</p>
+                </div>
+                <div id="framework4-objective" class="details">
+                    <h4>Details about Objective of PCI-DSS:</h4>
+                    <ul>
+                        <li>To protect cardholder data from theft and unauthorized access.</li>
+                        <li>To ensure that organizations maintain a secure environment for handling payment card data.
+                        </li>
+                    </ul>
+                </div>
+                <div id="framework4-rights-individuals" class="details">
+                    <h4>Details about Rights for Individuals in PCI-DSS:</h4>
+                    <ul>
+                        <li><b>Right to Security:</b> Assurance that their payment card data is protected and secure.
+                        </li>
+                        <li><b>Right to Privacy:</b> Protection of personal information from unauthorized access or
+                            misuse.</li>
+                        <li><b>Right to Redress:</b> Ability to dispute fraudulent charges and seek resolution.</li>
+                    </ul>
+                </div>
+                <div id="framework4-rights-organizations" class="details">
+                    <h4>Details about Rights for Organizations in PCI-DSS:</h4>
+                    <ul>
+                        <li><b>Compliance:</b> Follow PCI-DSS requirements to ensure the security of payment card data.
+                        </li>
+                        <li><b>Regular Assessments:</b> Conduct regular security assessments and vulnerability scans.
+                        </li>
+                        <li><b>Incident Response:</b> Have an incident response plan in place to address security
+                            breaches.</li>
+                    </ul>
+                </div>
+                <div id="framework4-consequences" class="details">
+                    <h4>Details about Consequences of PCI-DSS:</h4>
+                    <ul>
+                        <li><b>Fines and Penalties:</b> Non-compliance can result in fines from card networks and banks.
+                        </li>
+                        <li><b>Reputation Damage:</b> Breaches and non-compliance can damage an organization's
+                            reputation.</li>
+                        <li><b>Increased Costs:</b> Organizations may face increased costs for remediation and
+                            mitigation.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Framework 5: FISMA -->
+            <div id="framework5" class="framework">
+                <h2>Federal Information Security Management Act</h2>
+                <ul>
+                    <li onclick="showDetails('framework5-scope')">Scope</li>
+                    <li onclick="showDetails('framework5-objective')">Objective</li>
+                    <li onclick="toggleRights('framework5-rights')">Rights for Individuals and Organizations</li>
+                    <ul id="framework5-rights" class="rights-submenu">
+                        <li onclick="showDetails('framework5-rights-individuals')">Individuals</li>
+                        <li onclick="showDetails('framework5-rights-organizations')">Organizations</li>
+                    </ul>
+                    <li onclick="showDetails('framework5-consequences')">Consequences</li>
+                </ul>
+                <div id="framework5-scope" class="details">
+                    <h4>Details about Scope of FISMA:</h4>
+                    <p>FISMA applies to federal agencies and their contractors that manage federal information systems.
+                        It
+                        covers all information systems used or operated by federal agencies, including those used by
+                        contractors.</p>
+                </div>
+                <div id="framework5-objective" class="details">
+                    <h4>Details about Objective of FISMA:</h4>
+                    <ul>
+                        <li>To protect federal information and information systems from unauthorized access, use,
+                            disclosure,
+                            disruption, modification, or destruction.</li>
+                        <li>To ensure the availability, integrity, and confidentiality of federal information systems.
+                        </li>
+                    </ul>
+                </div>
+                <div id="framework5-rights-individuals" class="details">
+                    <h4>Details about Rights for Individuals in FISMA:</h4>
+                    <ul>
+                        <li><b>Right to Privacy:</b> Expectation of privacy for personal information handled by federal
+                            agencies.</li>
+                        <li><b>Right to Security:</b> Assurance that personal and sensitive information is protected.
+                        </li>
+                    </ul>
+                </div>
+                <div id="framework5-rights-organizations" class="details">
+                    <h4>Details about Rights for Organizations in FISMA:</h4>
+                    <ul>
+                        <li><b>Compliance:</b> Ensure compliance with FISMA requirements for information security.</li>
+                        <li><b>Security Plans:</b> Develop and maintain information security plans for federal systems.
+                        </li>
+                        <li><b>Regular Assessments:</b> Conduct regular security assessments and audits of federal
+                            information systems.</li>
+                    </ul>
+                </div>
+                <div id="framework5-consequences" class="details">
+                    <h4>Details about Consequences of FISMA:</h4>
+                    <ul>
+                        <li><b>Fines and Penalties:</b> Non-compliance may lead to legal consequences and penalties.
+                        </li>
+                        <li><b>Increased Scrutiny:</b> Agencies may face increased oversight and audits.</li>
+                        <li><b>Operational Impact:</b> Non-compliance can disrupt operations and impact agency
+                            functions.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="framework6" class="framework">
+                <h2>Personal Data Protection Act</h2>
+                <ul>
+                    <li onclick="showDetails('framework6-scope')">Scope</li>
+                    <li onclick="showDetails('framework6-objective')">Objective</li>
+                    <li onclick="toggleRights('framework6-rights')">Rights for Individuals and Organizations</li>
+                    <ul id="framework6-rights" class="rights-submenu">
+                        <li onclick="showDetails('framework6-rights-individuals')">Individuals</li>
+                        <li onclick="showDetails('framework6-rights-organizations')">Organizations</li>
+                    </ul>
+                    <li onclick="showDetails('framework6-consequences')">Consequences</li>
+                </ul>
+                <div id="framework6-scope" class="details">
+                    <h4>Details about Scope of PDPA:</h4>
+                    <p> PDPA applies to organizations operating within Singapore and those outside Singapore that handle
+                        personal data of individuals residing in Singapore. It covers personal data collected, used or
+                        disclosed by organizations in both electronic and non-electronic forms.</p>
+                </div>
+                <div id="framework6-objective" class="details">
+                    <h4>Details about Objective of PDPA:</h4>
+                    <ul>
+                        <li>To protect individuals' personal data and ensure that organizations handle personal data
+                            responsibly and transparently.</li>
+                        <li>To provide a framework for the collection, use and disclosure of personal data that respects
+                            individuals' privacy rights.</li>
+                    </ul>
+                </div>
+                <div id="framework6-rights-individuals" class="details">
+                    <h4>Details about Rights for Individuals in PDPA:</h4>
+                    <ul>
+                        <li><b>Right to Access:</b>Request access to personal data held by organizations and obtain
+                            information about its use.
+                        </li>
+                        <li><b>Right to Correction:</b> Request correction of inaccurate or incomplete personal data.
+                        </li>
+                        <li><b>Right to Consent:</b> Control over how personal data is collected, used and disclosed.
+                        </li>
+                        <li><b>Right to Withdrawal:</b> Withdraw consent for the collection, use or disclosure of
+                            personal data at any time.</li>
+                    </ul>
+                </div>
+                <div id="framework6-rights-organizations" class="details">
+                    <h4>Details about Rights for Organizations in PDPA:</h4>
+                    <ul>
+                        <li><b>Compliance Requirements:</b> Implement policies and practices to ensure compliance with
+                            PDPA principles, including data protection, consent, and retention policies.
+                        </li>
+                        <li><b>Data Protection Officer:</b> Appoint a Data Protection Officer (DPO) to oversee
+                            compliance and address data protection concerns.</li>
+                        <li><b>Data Breach Notifications:</b> Notify the Personal Data Protection Commission (PDPC) and
+                            affected individuals of data breaches that pose a significant risk.</li>
+                    </ul>
+                </div>
+                <div id="framework6-consequences" class="details">
+                    <h4>Details about Consequences of PDPA:</h4>
+                    <ul>
+                        <li><b>Fines and Penalties:</b> Non-compliance can result in fines up to $1 million or higher,
+                            depending on the severity of the violation.</li>
+                        <li><b>Reputation Damage:</b> Non-compliance can lead to loss of consumer trust and harm the
+                            organization’s reputation.</li>
+                        <li><b>Legal Action:</b> Organizations may face legal action from affected individuals or
+                            enforcement actions by the PDPC.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="framework7" class="framework">
+                <h2>Brazilian General Data Protection Law</h2>
+                <ul>
+                    <li onclick="showDetails('framework7-scope')">Scope</li>
+                    <li onclick="showDetails('framework7-objective')">Objective</li>
+                    <li onclick="toggleRights('framework7-rights')">Rights for Individuals and Organizations</li>
+                    <ul id="framework7-rights" class="rights-submenu">
+                        <li onclick="showDetails('framework7-rights-individuals')">Individuals</li>
+                        <li onclick="showDetails('framework7-rights-organizations')">Organizations</li>
+                    </ul>
+                    <li onclick="showDetails('framework7-consequences')">Consequences</li>
+                </ul>
+                <div id="framework7-scope" class="details">
+                    <h4>Details about Scope of LGPD:</h4>
+                    <p>LGPD applies to organizations operating within Brazil and those outside Brazil that process
+                        personal data of individuals located in Brazil.</p>
+                </div>
+                <div id="framework7-objective" class="details">
+                    <h4>Details about Objective of LGPD:</h4>
+                    <ul>
+                        <li>To protect the personal data of individuals and regulate how organizations collect, use and
+                            manage such data.</li>
+                        <li>To establish a framework for data protection that aligns with international standards and
+                            promotes transparency and accountability.</li>
+                    </ul>
+                </div>
+                <div id="framework7-rights-individuals" class="details">
+                    <h4>Details about Rights for Individuals in LGPD:</h4>
+                    <ul>
+                        <li><b>Right to Access:</b> Obtain information about the data collected, its processing, and its
+                            purposes.
+                        </li>
+                        <li><b>Right to Correction:</b> Request correction of inaccurate or incomplete personal data.
+                        </li>
+                        <li><b>Right to Deletion:</b> Request the deletion of personal data when it is no longer
+                            necessary or upon withdrawal of consent. </li>
+                        <li><b>Right to Data Portability:</b> Limit processing of personal data in specific
+                            situations.</li>
+                        <li><b>Right to Opposition</b> Object to the processing of personal data in certain
+                            circumstances.</li>
+                        <li><b>Right to Revoke Consent</b> Withdraw consent for data processing at any time.</li>
+                    </ul>
+                </div>
+                <div id="framework7-rights-organizations" class="details">
+                    <h4>Details about Rights for Organizations in LGPD:</h4>
+                    <ul>
+                        <li><b>Compliance</b>Implement measures to ensure compliance with LGPD, including data
+                            protection policies, risk assessments, and security measures.
+                        </li>
+                        <li><b>Data Protection Officer:</b> Appoint a DPO to oversee data protection practices and act
+                            as a point of contact for data subjects and the National Data Protection Authority (ANPD).
+                        </li>
+                        <li><b>Data Breach Notifications:</b> Report data breaches to the ANPD and affected individuals
+                            within specified timeframes.</li>
+                    </ul>
+                </div>
+                <div id="framework7-consequences" class="details">
+                    <h4>Details about Consequences of LGPD:</h4>
+                    <ul>
+                        <li><b>Fines and Penalties:</b> Non-compliance can result in fines up to 2% of the
+                            organization's revenue in Brazil, capped at R$50 million per violation.</li>
+                        <li><b>Reputation Damage:</b> Failure to comply can lead to significant damage to the
+                            organization’s reputation and loss of consumer trust.</li>
+                        <li><b>Legal Action:</b> Organizations may face legal action from individuals or enforcement
+                            actions from the ANPD.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="framework8" class="framework">
+                <h2>NIST Cybersecurity Framework</h2>
+                <ul>
+                    <li onclick="showDetails('framework8-scope')">Scope</li>
+                    <li onclick="showDetails('framework8-objective')">Objective</li>
+                    <li onclick="toggleRights('framework8-rights')">Rights for Individuals and Organizations</li>
+                    <ul id="framework8-rights" class="rights-submenu">
+                        <li onclick="showDetails('framework8-rights-individuals')">Individuals</li>
+                        <li onclick="showDetails('framework8-rights-organizations')">Organizations</li>
+                    </ul>
+                    <li onclick="showDetails('framework8-consequences')">Consequences</li>
+                </ul>
+                <div id="framework8-scope" class="details">
+                    <h4>Details about Scope of NIST:</h4>
+                    <p>NIST applies to organizations operating in the US primarily but widely adopted globally as a
+                        benchmark for information security. It covers a range of standards and guidelines for securing
+                        information systems and data including risk management, cybersecurity frameworks and security
+                        controls.</p>
+                </div>
+                <div id="framework8-objective" class="details">
+                    <h4>Details about Objective of NIST:</h4>
+                    <ul>
+                        <li>To provide guidelines and frameworks for enhancing cybersecurity and managing information
+                            security risks.</li>
+                        <li>To establish standards that help organizations protect sensitive data and ensure the
+                            integrity, availability, and confidentiality of their information systems.</li>
+                    </ul>
+                </div>
+                <div id="framework8-rights-individuals" class="details">
+                    <h4>Details about Rights for Individuals in NIST:</h4>
+                    <ul>
+                        <li><b>Security Assurance:</b> NIST standards help ensure that individuals' personal data is
+                            protected through effective security measures, though they do not directly grant rights to
+                            individuals.
+                        </li>
+                        <li><b>Transparency:</b> Individuals can benefit from improved security practices that protect
+                            their data and privacy, indirectly supporting their rights.</li>
+                    </ul>
+                </div>
+                <div id="framework8-rights-organizations" class="details">
+                    <h4>Details about Rights for Organizations in NIST:</h4>
+                    <ul>
+                        <li><b>Implementation Guidance:</b> Access to comprehensive guidelines for implementing robust
+                            security measures, including risk assessments and security controls.
+                        </li>
+                        <li><b>Frameworks:</b> Utilize established frameworks such as the NIST Cybersecurity Framework
+                            (CSF) to manage and reduce cybersecurity risks effectively.</li>
+                        <li><b>Compliance:</b> Align with industry best practices and regulatory requirements to enhance
+                            overall security posture and resilience.</li>
+                    </ul>
+                </div>
+                <div id="framework8-consequences" class="details">
+                    <h4>Details about Consequences of NIST:</h4>
+                    <ul>
+                        <li><b>Regulatory Penalties:</b> Non-compliance with specific regulatory requirements that
+                            reference NIST standards can result in fines and legal consequences.</li>
+                        <li><b>Reputation Damage:</b> Inadequate implementation of NIST standards can harm an
+                            organization’s reputation and undermine trust with stakeholders and customers.</li>
+                        <li><b>Operational Impact:</b>Failure to adhere to NIST standards may lead to increased
+                            vulnerability to cyber threats and security breaches.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
